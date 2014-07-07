@@ -36,6 +36,10 @@
             this.clearButton = new System.Windows.Forms.Button();
             this.addButton = new System.Windows.Forms.Button();
             this.infogroupBox = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.addressTextbox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lakeCombobox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.firstTextbox = new System.Windows.Forms.TextBox();
             this.lastTextbox = new System.Windows.Forms.TextBox();
@@ -56,10 +60,6 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editDocumentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lakeCombobox = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.addressTextbox = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.executegroupBox.SuspendLayout();
@@ -177,6 +177,50 @@
             this.infogroupBox.TabIndex = 0;
             this.infogroupBox.TabStop = false;
             this.infogroupBox.Text = "Step 1";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label5.Location = new System.Drawing.Point(144, 60);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(69, 18);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Address";
+            // 
+            // addressTextbox
+            // 
+            this.addressTextbox.Location = new System.Drawing.Point(18, 80);
+            this.addressTextbox.Name = "addressTextbox";
+            this.addressTextbox.Size = new System.Drawing.Size(314, 21);
+            this.addressTextbox.TabIndex = 14;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Location = new System.Drawing.Point(400, 13);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 18);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Lake";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // lakeCombobox
+            // 
+            this.lakeCombobox.FormattingEnabled = true;
+            this.lakeCombobox.Items.AddRange(new object[] {
+            "Cedar Creek Lake",
+            "Richland Chambers",
+            "Lake Palestine"});
+            this.lakeCombobox.Location = new System.Drawing.Point(338, 34);
+            this.lakeCombobox.Name = "lakeCombobox";
+            this.lakeCombobox.Size = new System.Drawing.Size(153, 23);
+            this.lakeCombobox.TabIndex = 12;
+            this.lakeCombobox.SelectedIndexChanged += new System.EventHandler(this.lakeCombobox_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -354,9 +398,9 @@
             "Change Request",
             "Dock Application for Improvement Permit",
             "Dock Specifications",
+            "Electrical Contractor Insurance",
             "Lander Marine Insurance",
             "Letter of Authorization",
-            "Parks Construction Insurance",
             "Proposal",
             "Quote",
             "Wall Specifications",
@@ -431,50 +475,6 @@
             this.editDocumentsToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.editDocumentsToolStripMenuItem.Text = "Edit Documents";
             this.editDocumentsToolStripMenuItem.Click += new System.EventHandler(this.editDocumentsToolStripMenuItem_Click);
-            // 
-            // lakeCombobox
-            // 
-            this.lakeCombobox.FormattingEnabled = true;
-            this.lakeCombobox.Items.AddRange(new object[] {
-            "Cedar Creek Lake",
-            "Richland Chambers",
-            "Lake Palestine"});
-            this.lakeCombobox.Location = new System.Drawing.Point(338, 34);
-            this.lakeCombobox.Name = "lakeCombobox";
-            this.lakeCombobox.Size = new System.Drawing.Size(153, 23);
-            this.lakeCombobox.TabIndex = 12;
-            this.lakeCombobox.SelectedIndexChanged += new System.EventHandler(this.lakeCombobox_SelectedIndexChanged);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(400, 13);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 18);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Lake";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // addressTextbox
-            // 
-            this.addressTextbox.Location = new System.Drawing.Point(18, 80);
-            this.addressTextbox.Name = "addressTextbox";
-            this.addressTextbox.Size = new System.Drawing.Size(314, 21);
-            this.addressTextbox.TabIndex = 14;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label5.Location = new System.Drawing.Point(144, 60);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 18);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Address";
             // 
             // Form1
             // 

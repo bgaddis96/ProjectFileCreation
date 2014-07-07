@@ -108,8 +108,8 @@ namespace Project_File_Creation
 
                 string user = Environment.UserName;
 
-                    string path = System.IO.Path.Combine(@"C:\Users\", user, @"Dropbox\Projects\", lastName + ", " + firstName);
-                    string targetpath = System.IO.Path.Combine(@"c:\Users\" + user + @"\Dropbox\Projects\" + l + ", " + f + @"\" + adprojectPath);
+                    string path = System.IO.Path.Combine(@"C:\Users\", user, @"Google Drive\Projects\", lastName + ", " + firstName);
+                    string targetpath = System.IO.Path.Combine(@"c:\Users\" + user + @"\Google Drive\Projects\" + l + ", " + f + @"\" + adprojectPath);
 
 
                 if (System.IO.Directory.Exists(targetpath))
@@ -121,7 +121,7 @@ namespace Project_File_Creation
                 {
                     System.IO.Directory.CreateDirectory(path);
                     System.IO.Directory.CreateDirectory(path + @"\" + adprojectPath);
-                    string sourcepath = System.IO.Path.Combine(@"c:\Users\" + user + @"\Dropbox\Forms");
+                    string sourcepath = System.IO.Path.Combine(@"c:\Users\" + user + @"\Google Drive\Forms");
 
 
                     if (checkedListBox1.GetItemChecked(0))
@@ -223,7 +223,7 @@ namespace Project_File_Creation
 
                     if (checkedListBox1.GetItemChecked(6))
                     {
-                        string appfile = "App Parks Insurance.pdf";
+                        string appfile = "App Electrical Insurance.pdf";
 
                         string destappfile = FI + LI + " " + appfile;
                         string sourceFile = System.IO.Path.Combine(sourcepath, appfile);
@@ -396,8 +396,8 @@ namespace Project_File_Creation
                 }
 
                 string user = Environment.UserName;
-                string path = System.IO.Path.Combine(@"C:\Users\", user, @"Dropbox\Projects\", lastName + ", " + firstName);
-                string targetpath = System.IO.Path.Combine(@"c:\Users\" + user + @"\Dropbox\Projects\" + l + ", " + f + @"\" + adprojectPath);
+                string path = System.IO.Path.Combine(@"C:\Users\", user, @"Google Drive\Projects\", lastName + ", " + firstName);
+                string targetpath = System.IO.Path.Combine(@"c:\Users\" + user + @"\Google Drive\Projects\" + l + ", " + f + @"\" + adprojectPath);
 
                 //Tests if the directory exists and gives message
                 if (System.IO.Directory.Exists(targetpath) == false)
@@ -432,7 +432,7 @@ namespace Project_File_Creation
                 ADDTHEM:
                     System.IO.Directory.CreateDirectory(path);
                     System.IO.Directory.CreateDirectory(path + @"\" + adprojectPath);
-                    string sourcepath = System.IO.Path.Combine(@"c:\Users\" + user + @"\Dropbox\Forms");
+                    string sourcepath = System.IO.Path.Combine(@"c:\Users\" + user + @"\Google Drive\Forms");
 
 
                     if (checkedListBox1.GetItemChecked(0))
@@ -533,7 +533,7 @@ namespace Project_File_Creation
 
                     if (checkedListBox1.GetItemChecked(6))
                     {
-                        string appfile = "App Parks Insurance.pdf";
+                        string appfile = "App Electrical Insurance.pdf";
 
                         string destappfile = FI + LI + " " + appfile;
                         string sourceFile = System.IO.Path.Combine(sourcepath, appfile);
@@ -626,7 +626,7 @@ namespace Project_File_Creation
         private void editDocumentsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string edituser = Environment.UserName;
-            System.Diagnostics.Process.Start(@"c:\Users\" + edituser + @"\Dropbox\Forms");
+            System.Diagnostics.Process.Start(@"c:\Users\" + edituser + @"\Google Drive\Forms");
         }
 
         private void changeButton_Click(object sender, EventArgs e)

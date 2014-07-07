@@ -60,10 +60,10 @@
     <ApplicationIcon>Lander Icon File.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>E03612B38E246DC67B810937C3C6A3E53C501E13</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>D9553FA3D42F03E1DDFB29F9A39D3ECBD601A7A2</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>Project File Creation_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>Project File Creation_1_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -121,6 +121,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="app.config" />
+    <None Include="Project File Creation_1_TemporaryKey.pfx" />
     <None Include="Project File Creation_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
